@@ -14,7 +14,6 @@ find_package(catkin REQUIRED COMPONENTS
   tf2
   trajectory_msgs
   visualization_msgs
-  franka_core_msgs
 )
 
 ### Generate messages in the 'msg' folder
@@ -43,7 +42,6 @@ catkin_package(
     tf2
     trajectory_msgs
     visualization_msgs
-    franka_core_msgs
 #  DEPENDS system_lib
 )
 
@@ -61,8 +59,6 @@ add_executable(joystick_publisher src/joystick_pub.cpp )
 target_link_libraries(joystick_publisher
                     joystick_lib
                     ${catkin_LIBRARIES})
-
-
 
 add_library(franka_joystick_control_lib src/franka_joystick_control_lib.cpp)
 target_link_libraries(franka_joystick_control_lib ${catkin_LIBRARIES})

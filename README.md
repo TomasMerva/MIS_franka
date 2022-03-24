@@ -1,7 +1,19 @@
 # MIS_franka
 
 ### Instalation
-`sudo apt install ros-noetic-libfranka` -> you do not need it for slave PC
+1. `sudo apt install ros-noetic-libfranka`
+
+2. `sudo apt install ros-noetic-moveit`
+
+3. `sudo apt-get install ros-noetic-trac-ik-kinematics-plugin`
+
+4. git clone this repo
+
+5. `rosdep install --from-paths src --ignore-src --rosdistro noetic -y --skip-keys libfranka`
+
+6. build without files in CMakeLists (franka_joystick_control) because of the custom msg
+
+7. build with files in CMakeLists (franka_joystick_control)
 
 
 ### ROS Master-Slave connection

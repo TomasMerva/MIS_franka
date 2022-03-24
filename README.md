@@ -25,6 +25,12 @@ Launch joystick node (joystick driver + joystick_EEF_controller) on **slave PC**
 
 `roslaunch franka_joystick_control joystick_control.launch`
 
+### Important topics
+`/joystick_feedback` -> Raw data from joystick. For more info check `/franka_joystick_control/src/joystick_pub.cpp`
+
+`/joystick_cartesian_goal` -> Commands for Franka representing cartesian velocities
+
+
 
 ### Acknowledgement
 [franka_ros](https://github.com/frankaemika/franka_ros)

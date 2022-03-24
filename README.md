@@ -7,13 +7,15 @@
 
 3. `sudo apt-get install ros-noetic-trac-ik-kinematics-plugin`
 
-4. git clone this repo
+5. `sudo apt install ros-noetic-panda-moveit-config`
 
-5. `rosdep install --from-paths src --ignore-src --rosdistro noetic -y --skip-keys libfranka`
+6. git clone this repo
 
-6. build without files in CMakeLists (franka_joystick_control) because of the custom msg
+7. `rosdep install --from-paths src --ignore-src --rosdistro noetic -y --skip-keys libfranka`
 
-7. build with files in CMakeLists (franka_joystick_control)
+8. build without files in CMakeLists (franka_joystick_control) because of the custom msg
+
+9. build with files in CMakeLists (franka_joystick_control)
 
 
 ### ROS Master-Slave connection

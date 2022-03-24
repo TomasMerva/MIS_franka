@@ -5,7 +5,7 @@
 
 
 ### ROS Master-Slave connection
-1. Set IP address on your **slave PC** 192.16.0.2
+1. Set IP address on your **slave PC** `192.16.0.2`
 2. Set these two commands in `~/.bashrc` on your **slave PC**:
 
 `export ROS_MASTER_URI=http://192.16.0.1:11311`
@@ -14,6 +14,9 @@
 
 ### Connect to the master PC
 `ssh -X km@192.16.0.1`
+
+After logging into the master PC you need to release the robot's brakes and allow FCI. By writting `firefox` into terminal,
+you will automatically enter `Franka DESK` where you can do these steps.
 
 
 ### Start guide
